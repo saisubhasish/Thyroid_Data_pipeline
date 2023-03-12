@@ -24,7 +24,7 @@ class Generic:
         for df in chunk_df:
             for data in df.values:
                 generic = Generic(dict(zip(df.columns, list(map(str,data)))))
-                # cars.append(car)
+                # trucks.append(truck)
                 # print(n_row)
                 n_row += 1
                 yield generic

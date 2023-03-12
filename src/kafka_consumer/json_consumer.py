@@ -35,7 +35,7 @@ def consumer_using_sample_file(topic,file_path):
 
             record: Generic = json_deserializer(msg.value(), SerializationContext(msg.topic(), MessageField.VALUE))
 
-            # mongodb.insert(collection_name="car",record=car.record)
+            # mongodb.insert(collection_name="aps",record=truck.record)
 
             if record is not None:
                 records.append(record.to_dict())

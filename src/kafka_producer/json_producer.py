@@ -36,7 +36,7 @@ from src.entity.generic import Generic, instance_to_dict
 FILE_PATH = "/D:/FSDS-iNeuron/10.Projects-DS/APS_Failure_at_Scania_Trucks/aps_failure_training_set1.csv"
 
 
-def car_to_dict(car: Generic, ctx):
+def truck_to_dict(truck: Generic, ctx):
     """
     Returns a dict representation of a User instance for serialization.
     Args:
@@ -45,11 +45,11 @@ def car_to_dict(car: Generic, ctx):
             operation.
     Returns:
         dict: Dict populated with user attributes to be serialized.
-        :param car:
+        :param truck:
     """
 
     # User._address must not be serialized; omit from dict
-    return car.record
+    return truck.record
 
 
 def delivery_report(err, msg):

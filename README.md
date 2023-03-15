@@ -66,9 +66,3 @@ Build docker image
 ```
 docker build -t data-pipeline:lts .
 ```
-
-For linux or mac
-Run docker image
-```
-docker run -it -v $(pwd)/logs:/logs  --env-file=$(pwd)/.env data-pipeline:lts
-```

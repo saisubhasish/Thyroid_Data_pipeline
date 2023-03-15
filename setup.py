@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 from typing import List
 
 #Declaring variables for setup functions
-PROJECT_NAME="kafka-APS"
+PROJECT_NAME="kafka-Thyroid"
 VERSION="0.0.1"
 AUTHOR="Sai Subhasish"
 DESRCIPTION="This is a sample project for kafka producer and consumer"

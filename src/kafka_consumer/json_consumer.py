@@ -40,7 +40,7 @@ def consumer_using_sample_file(topic,file_path):
             if record is not None:
                 records.append(record.to_dict())
                 if x % 5000 == 0:                 # 5000 interval
-                    mongodb.insert_many(collection_name="sensor", records=records)     #  Inserting data after interval
+                    mongodb.insert_many(collection_name="Thyroid", records=records)     #  Inserting data after interval
                     records = []
             x = x + 1
         except KeyboardInterrupt:

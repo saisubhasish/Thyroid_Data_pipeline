@@ -33,10 +33,10 @@ from src.kafka_config import sasl_conf, schema_config
 from src.entity.generic import Generic, instance_to_dict
 
 
-FILE_PATH = "/D:/FSDS-iNeuron/10.Projects-DS/APS_Failure_at_Scania_Trucks/aps_failure_training_set1.csv"
+FILE_PATH = "/D:/FSDS-iNeuron/10.Projects-DS/ThyroidDetection_ML_Project/hypothyroid.csv"
 
 
-def truck_to_dict(truck: Generic, ctx):
+def thyroid_to_dict(thyroid: Generic, ctx):
     """
     Returns a dict representation of a User instance for serialization.
     Args:
@@ -49,7 +49,7 @@ def truck_to_dict(truck: Generic, ctx):
     """
 
     # User._address must not be serialized; omit from dict
-    return truck.record
+    return thyroid.record
 
 
 def delivery_report(err, msg):
